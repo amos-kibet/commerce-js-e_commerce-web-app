@@ -1,3 +1,5 @@
 import Commerce from '@chec/commerce.js';
 
-export const commerce = new Commerce(process.env.CUSTOM_REACT_APP_CHEC_PUBLIC_KEY, true);
+require('dotenv').config();
+
+export const commerce = new Commerce(process.env.SAMPLE_REACT_APP_CHEC_PUBLIC_KEY, true);
